@@ -1,0 +1,35 @@
+# === IDE / Eclipse / STS ===
+.classpath
+.project
+.settings/
+.vscode/
+.idea/
+*.iml
+
+# === Build / Salidas ===
+/bin/
+/build/
+/target/
+/out/
+*.class
+*.log
+
+# === Tomcat / Workspace ===
+Servers/
+.metadata/
+
+# === SO ===
+.DS_Store
+Thumbs.db
+
+# Tomcat local
+/apache-tomcat-*/
+apache-tomcat*/
+
+# Eclipse/STS workspace en este módulo
+/.metadata/
+/Servers/
+
+
+# Nota: NO ignoramos jars por defecto para conservar
+# los que pongas en src/main/webapp/lib de cada proyecto.

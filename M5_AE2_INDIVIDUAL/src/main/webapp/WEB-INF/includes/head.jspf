@@ -1,0 +1,7 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><c:out value="${pageTitle != null ? pageTitle : 'App'}" /></title>
