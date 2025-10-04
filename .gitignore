@@ -33,3 +33,7 @@ apache-tomcat*/
 
 # Nota: NO ignoramos jars por defecto para conservar
 # los que pongas en src/main/webapp/lib de cada proyecto.
+
+
+# Ignorar la clase real con credenciales
+M5_AE4_INDIVIDUAL/src/main/java/com/skillnest/web/util/ConexionDB.java

@@ -1,0 +1,39 @@
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<c:set var="active" value="${empty active ? '' : active}" />
+
+<nav class="bg-white/70 backdrop-blur border-b">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-xl sm:text-2xl font-semibold">
+      <c:out value="${pageTitle != null ? pageTitle : 'App'}" />
+    </h1>
+
+    <ul class="flex items-center gap-4 text-sm">
+      <!-- Inicio -->
+      <li>
+        <a href="${pageContext.request.contextPath}/"
+           class="px-3 py-1.5 rounded-lg transition
+           ${active == 'inicio' ? 'bg-cyan-50 text-cyan-700 font-semibold' : 'text-slate-700 hover:text-cyan-700'}">
+          Inicio
+        </a>
+      </li>
+
+	<!-- Registrar -->
+      <li>
+        <a href="${pageContext.request.contextPath}/registrar"
+           class="px-3 py-1.5 rounded-lg transition
+           ${active == 'registrar' ? 'bg-cyan-50 text-cyan-700 font-semibold' : 'text-slate-700 hover:text-cyan-700'}">
+          Registrar
+        </a>
+      </li>
+
+      <!-- Mostrar -->
+      <li>
+        <a href="${pageContext.request.contextPath}/productos"
+           class="px-3 py-1.5 rounded-lg transition
+           ${active == 'mostrar' ? 'bg-cyan-50 text-cyan-700 font-semibold' : 'text-slate-700 hover:text-cyan-700'}">
+          Mostrar
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
